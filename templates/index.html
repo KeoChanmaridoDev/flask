@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Tech | Company Profile</title>
+
+    <style>
+        /* --- CSS Variables & Resets --- */
+        :root {
+            --primary-color: #0056b3;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --bg-light: #f4f7f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* --- Navigation & Header --- */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background-color: #e0e7ff;
+            padding: 5rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Main Content Containers --- */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        /* --- Cards (Services) --- */
+        .flex-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #222222;
+            color: #cccccc;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Nexus Tech</h2>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Building the Digital Future</h1>
+        <p>We deliver scalable, high-performance solutions for modern businesses looking to elevate their digital presence.</p>
+    </section>
+
+    <div class="container" id="about">
+        <h2 class="section-title">Who We Are</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            Nexus Tech is a forward-thinking technology agency dedicated to helping companies navigate the digital landscape. With a passion for clean code and a drive for problem-solving, our team builds robust software, striking web profiles, and infrastructure that scales securely.
+        </p>
+    </div>
+
+    <div class="container" id="services" style="background-color: #eaeff2; border-radius: 8px;">
+        <h2 class="section-title">What We Do</h2>
+        <div class="flex-row">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Creating responsive, high-performance web applications using modern HTML, CSS, and JavaScript standards.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Infrastructure</h3>
+                <p>Deploying and managing scalable, secure environments tailored to your specific operational needs.</p>
+            </div>
+            <div class="card">
+                <h3>Technical Consulting</h3>
+                <p>Providing expert guidance on architecture, security policy implementation, and digital transformation.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 Nexus Tech | contact@nexustech.example.com | (555) 123-4567</p>
+    </footer>
+
+</body>
+</html>
